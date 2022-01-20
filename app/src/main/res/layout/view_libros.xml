@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview= "http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    cardview:cardElevation="10sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.32">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                cardview:cardCornerRadius="12dp"
+                cardview:cardBackgroundColor="@color/tinto">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/fotoLibro"
+                                android:layout_width="130sp"
+                                android:layout_height="150sp"
+                                />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="5sp">
+                            <TextView
+                                android:id="@+id/tituloLibro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:padding="5sp"
+                                android:textColor="@color/white"
+                                android:text="@string/title"
+                                android:textSize="15sp"/>
+                            <TextView
+                                android:id="@+id/subTituloLibro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/subtitulo"
+                                android:padding="5dp"
+                                android:textSize="15sp"
+                                android:textColor="@color/white"
+                                android:gravity=""/>
+                                <TextView
+                                    android:id="@+id/isbn13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/codigo"
+                                    android:padding="5dp"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/white"
+                                    android:gravity=""/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/precioLibro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price"
+                            android:layout_marginRight="20sp"
+                            android:textSize="16sp"
+                            android:textColor="@color/verde"
+                            android:gravity="end"/>
+
+
+                    </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

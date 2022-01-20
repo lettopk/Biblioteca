@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Biblioteca Nacional</string>
+    <string name="title">title</string>
+    <string name="subtitulo">subTitulo</string>
+    <string name="codigo">codigo</string>
+    <string name="price">$Price</string>
+</resources>
